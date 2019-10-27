@@ -6,7 +6,7 @@ class Calculator
   end
 
   def column_width_for_type(type:)
-    data.group_by{|h| h[type]}.keys.flatten.max_by(&:length).length
+    data.group_by { |h| h[type] }.keys.flatten.max_by(&:length).length
   end
 
   def amount_subrows_for(row)
