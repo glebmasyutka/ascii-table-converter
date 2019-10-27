@@ -5,7 +5,7 @@ class Formatter
     int
     string
     money
-  )
+  ).freeze
 
   def initialize(parser:)
     @parser = parser
